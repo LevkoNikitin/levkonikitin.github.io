@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,600;1,700;1,800;1,900&display=swap");
 
-
-
 $breakpoint-tablet: 1365px;
 $breakpoint-mobile: 620px;
 
 body {
+    background-image: url("bg4.png");
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: 1000px 1000px;
     background-color: #efe6d9;
     width: auto;
     canvas {
@@ -26,8 +28,6 @@ body {
         min-width: 315px;
         height: fit-content;
         margin: auto;
-
-       
 
         background: #495a58;
         border-radius: 15px;
@@ -101,13 +101,53 @@ body {
             display: none !important;
         }
 
-        div#about {
+        div#aboutPage {
             display: flex;
             margin: auto;
-            padding: 10px;
+            padding: 20px;
             flex-wrap: wrap;
             justify-content: space-between;
             align-items: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            color: #efe6d9;
+
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 18px;
+                line-height: 32px;
+            }
+        }
+        div#contactPage {
+            display: flex;
+            margin: auto;
+            padding: 20px;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            font-family: Nunito;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 38px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            color: #efe6d9;
+
+            @media (max-width: $breakpoint-mobile) {
+                font-size: 18px;
+                line-height: 32px;
+            }
         }
         nav#big {
             width: fill;
