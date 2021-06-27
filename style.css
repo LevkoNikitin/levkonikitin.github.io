@@ -21,6 +21,7 @@ body div.content {
           transform: translate(-50%, -50%);
   width: 70%;
   max-width: 1000px;
+  min-width: 315px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
