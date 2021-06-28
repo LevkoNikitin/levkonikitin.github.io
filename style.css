@@ -131,10 +131,6 @@ body div.content div#homePage .list {
   }
 }
 
-body div.content .noRender {
-  display: none !important;
-}
-
 body div.content div#aboutPage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -143,9 +139,9 @@ body div.content div#aboutPage {
   padding: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -157,7 +153,6 @@ body div.content div#aboutPage {
   font-size: 22px;
   line-height: 38px;
   display: flex;
-  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -180,9 +175,9 @@ body div.content div#contactPage {
   padding: 20px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -207,6 +202,10 @@ body div.content div#contactPage {
     font-size: 18px;
     line-height: 32px;
   }
+}
+
+body div.content .noRender {
+  display: none !important;
 }
 
 body div.content nav#big {
